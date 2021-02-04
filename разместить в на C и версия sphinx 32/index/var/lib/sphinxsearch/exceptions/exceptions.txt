@@ -1,0 +1,14 @@
+at & t => at&t
+AT&T => AT&T
+Standarten   Fuehrer => standartenfuhrer
+Standarten Fuhrer => standartenfuhrer
+MS Windows => ms windows
+Microsoft Windows => ms windows
+C++ => cplusplus
+c++ => cplusplus
+C plus plus => cplusplus
+велик => велосипед
+лисопед => велосипед
+лесопед => велосипед
+педальник => велосипед
+пидальник => велосипед

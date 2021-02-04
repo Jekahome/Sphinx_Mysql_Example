@@ -1,0 +1,17 @@
+#include <sphinxudf.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#ifdef _MSC_VER
+#define snprintf _snprintf
+#define DLLEXPORT __declspec(dllexport)
+#else
+#define DLLEXPORT
+#endif
+// our library will be called udfexample.so, thus, so it must define
+// a version function named udfexample_ver()
+int udfexample_ver()
+{
+    return SPH_UDF_VERSION;
+}

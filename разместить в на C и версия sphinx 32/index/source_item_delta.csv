@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sphinx:docset xmlns:sphinx="http://sphinxsearch.com/">
+    <sphinx:document id="12">
+        <category>hello</category>
+        <product>hello</product>
+        <product_field>hello</product_field>
+		 
+    </sphinx:document>
+</sphinx:docset>

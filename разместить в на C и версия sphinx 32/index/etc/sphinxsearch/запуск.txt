@@ -1,0 +1,3 @@
+C:/sphinx/bin/indexer index_main --config  C:/index/etc/sphinxsearch/sphinxmysql.conf
+C:/sphinx/bin/searchd --config  C:/index/etc/sphinxsearch/sphinxmysql.conf
+D:\OpenServer\modules\database\MySQL-5.5\bin\mysql -h localhost -P 9306

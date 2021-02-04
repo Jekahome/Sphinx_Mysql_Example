@@ -1,0 +1,386 @@
+[Sun Apr 17 19:39:04.432 2016] [ 7340] listening on 127.0.0.1:9306
+[Sun Apr 17 19:39:04.448 2016] [ 7340] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 19:39:04.449 2016] [ 7340] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 19:39:04.449 2016] [ 7340] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 19:39:04.450 2016] [ 7340] binlog: finished replaying total 1 in 0.001 sec
+[Sun Apr 17 19:39:04.451 2016] [ 7340] accepting connections
+[Sun Apr 17 19:48:11.390 2016] [ 7340] caught SIGTERM, shutting down
+[Sun Apr 17 19:48:11.487 2016] [ 7340] shutdown complete
+[Sun Apr 17 19:52:21.000 2016] [ 6384] listening on 127.0.0.1:9306
+[Sun Apr 17 19:52:21.012 2016] [ 6384] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 19:52:21.013 2016] [ 6384] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 19:52:21.014 2016] [ 6384] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 19:52:21.014 2016] [ 6384] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 19:52:21.015 2016] [ 6384] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 19:52:21.015 2016] [ 6384] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 19:52:21.016 2016] [ 6384] binlog: finished replaying total 2 in 0.004 sec
+[Sun Apr 17 19:52:21.018 2016] [ 6384] accepting connections
+[Sun Apr 17 19:57:40.325 2016] [ 6384] caught SIGTERM, shutting down
+[Sun Apr 17 19:57:40.394 2016] [ 6384] shutdown complete
+[Sun Apr 17 20:57:57.046 2016] [ 6276] listening on 192.168.1.85:9306
+[Sun Apr 17 20:57:57.047 2016] [ 6276] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:00.046 2016] [ 6276] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:03.046 2016] [ 6276] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:06.046 2016] [ 6276] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:09.046 2016] [ 6276] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:50.147 2016] [ 7700] listening on 192.168.1.85:9306
+[Sun Apr 17 20:58:50.147 2016] [ 7700] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:53.147 2016] [ 7700] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 20:58:56.147 2016] [ 7700] bind() failed on 192.168.1.85, retrying...
+[Sun Apr 17 21:11:24.013 2016] [ 3028] listening on 127.0.0.1:9306
+[Sun Apr 17 21:11:24.094 2016] [ 3028] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 21:11:24.095 2016] [ 3028] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 21:11:24.095 2016] [ 3028] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 21:11:24.096 2016] [ 3028] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 21:11:24.097 2016] [ 3028] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 21:11:24.098 2016] [ 3028] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 21:11:24.098 2016] [ 3028] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 21:11:24.099 2016] [ 3028] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 21:11:24.099 2016] [ 3028] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 21:11:24.099 2016] [ 3028] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 21:11:24.100 2016] [ 3028] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 21:11:24.101 2016] [ 3028] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 21:11:24.101 2016] [ 3028] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 21:11:24.102 2016] [ 3028] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 21:11:24.102 2016] [ 3028] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 21:11:24.103 2016] [ 3028] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 21:11:24.104 2016] [ 3028] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 21:11:24.104 2016] [ 3028] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 21:11:24.104 2016] [ 3028] binlog: finished replaying total 6 in 0.010 sec
+[Sun Apr 17 21:11:24.106 2016] [ 3028] accepting connections
+[Sun Apr 17 21:12:27.379 2016] [ 3028] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:12:27.426 2016] [ 3028] rotating index 'deltaproduct': started
+[Sun Apr 17 21:12:27.435 2016] [ 3028] WARNING: binlog: failed to unlink C:/index/var/log/binlog/binlog.001: Permission denied (remove it manually)
+[Sun Apr 17 21:12:27.470 2016] [ 3028] last message repeated 5 times
+[Sun Apr 17 21:12:27.470 2016] [ 3028] rotating index 'deltaproduct': success
+[Sun Apr 17 21:12:27.470 2016] [ 3028] rotating index 'index_main': started
+[Sun Apr 17 21:12:27.482 2016] [ 3028] rotating index 'index_main': success
+[Sun Apr 17 21:12:27.482 2016] [ 3028] rotating index: all indexes done
+[Sun Apr 17 21:13:11.370 2016] [ 3028] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:13:11.416 2016] [ 3028] rotating index 'index_main': started
+[Sun Apr 17 21:13:11.426 2016] [ 3028] rotating index 'index_main': success
+[Sun Apr 17 21:13:11.426 2016] [ 3028] rotating index: all indexes done
+[Sun Apr 17 21:26:36.054 2016] [ 3028] caught SIGTERM, shutting down
+[Sun Apr 17 21:26:36.121 2016] [ 3028] rt: index rt_delta: ramchunk saved in 0.025 sec
+[Sun Apr 17 21:26:36.125 2016] [ 3028] shutdown complete
+[Sun Apr 17 21:31:31.790 2016] [ 6616] listening on 127.0.0.1:9306
+[Sun Apr 17 21:31:31.891 2016] [ 6616] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 21:31:31.896 2016] [ 6616] accepting connections
+[Sun Apr 17 21:34:19.046 2016] [ 6616] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:34:19.048 2016] [ 6616] rotating index 'deltaproduct': started
+[Sun Apr 17 21:34:19.057 2016] [ 6616] rotating index 'deltaproduct': success
+[Sun Apr 17 21:34:19.057 2016] [ 6616] rotating index 'index_main': started
+[Sun Apr 17 21:34:19.067 2016] [ 6616] rotating index 'index_main': success
+[Sun Apr 17 21:34:19.068 2016] [ 6616] rotating index: all indexes done
+[Sun Apr 17 21:35:05.975 2016] [ 6616] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:35:05.999 2016] [ 6616] rotating index 'index_main': started
+[Sun Apr 17 21:35:06.008 2016] [ 6616] rotating index 'index_main': success
+[Sun Apr 17 21:35:06.009 2016] [ 6616] rotating index: all indexes done
+[Sun Apr 17 21:35:48.259 2016] [ 6616] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:35:48.293 2016] [ 6616] rotating index 'index_main': started
+[Sun Apr 17 21:35:48.301 2016] [ 6616] rotating index 'index_main': success
+[Sun Apr 17 21:35:48.302 2016] [ 6616] rotating index: all indexes done
+[Sun Apr 17 21:39:27.898 2016] [ 6616] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:39:27.900 2016] [ 6616] rotating index 'deltaproduct': started
+[Sun Apr 17 21:39:27.909 2016] [ 6616] rotating index 'deltaproduct': success
+[Sun Apr 17 21:39:27.910 2016] [ 6616] rotating index: all indexes done
+[Sun Apr 17 21:39:52.282 2016] [ 6616] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:39:52.296 2016] [ 6616] rotating index 'index_main': started
+[Sun Apr 17 21:39:52.306 2016] [ 6616] rotating index 'index_main': success
+[Sun Apr 17 21:39:52.306 2016] [ 6616] rotating index: all indexes done
+[Sun Apr 17 21:40:32.238 2016] [ 6616] caught SIGTERM, shutting down
+[Sun Apr 17 21:40:32.316 2016] [ 6616] rt: index rt_delta: ramchunk saved in 0.035 sec
+[Sun Apr 17 21:40:32.320 2016] [ 6616] shutdown complete
+[Sun Apr 17 21:41:19.544 2016] [ 6480] listening on 127.0.0.1:9306
+[Sun Apr 17 21:41:19.609 2016] [ 6480] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 21:41:19.612 2016] [ 6480] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 21:41:19.616 2016] [ 6480] accepting connections
+[Sun Apr 17 21:47:09.515 2016] [ 6480] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:47:09.561 2016] [ 6480] rotating index 'deltaproductcsv': started
+[Sun Apr 17 21:47:09.567 2016] [ 6480] rotating index 'deltaproductcsv': success
+[Sun Apr 17 21:47:09.567 2016] [ 6480] rotating index: all indexes done
+[Sun Apr 17 21:47:39.843 2016] [ 6480] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:47:39.847 2016] [ 6480] rotating index 'deltaproductcsv': started
+[Sun Apr 17 21:47:39.857 2016] [ 6480] rotating index 'deltaproductcsv': success
+[Sun Apr 17 21:47:39.857 2016] [ 6480] rotating index: all indexes done
+[Sun Apr 17 21:47:55.639 2016] [ 6480] caught SIGTERM, shutting down
+[Sun Apr 17 21:47:55.728 2016] [ 6480] rt: index rt_delta: ramchunk saved in 0.044 sec
+[Sun Apr 17 21:47:55.733 2016] [ 6480] shutdown complete
+[Sun Apr 17 21:48:16.421 2016] [ 6164] listening on 127.0.0.1:9306
+[Sun Apr 17 21:48:16.508 2016] [ 6164] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 21:48:16.511 2016] [ 6164] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 21:48:16.518 2016] [ 6164] accepting connections
+[Sun Apr 17 21:48:23.470 2016] [ 6164] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 21:48:23.512 2016] [ 6164] rotating index 'deltaproductcsv': started
+[Sun Apr 17 21:48:23.549 2016] [ 6164] rotating index 'deltaproductcsv': success
+[Sun Apr 17 21:48:23.549 2016] [ 6164] rotating index: all indexes done
+[Sun Apr 17 22:04:28.342 2016] [ 6164] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:04:28.392 2016] [ 6164] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:04:28.403 2016] [ 6164] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:04:28.403 2016] [ 6164] rotating index: all indexes done
+[Sun Apr 17 22:09:05.034 2016] [ 6164] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:09:05.041 2016] [ 6164] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:09:05.052 2016] [ 6164] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:09:05.052 2016] [ 6164] rotating index: all indexes done
+[Sun Apr 17 22:11:56.682 2016] [ 6164] caught SIGTERM, shutting down
+[Sun Apr 17 22:11:56.746 2016] [ 6164] rt: index rt_delta: ramchunk saved in 0.003 sec
+[Sun Apr 17 22:11:56.756 2016] [ 6164] shutdown complete
+[Sun Apr 17 22:14:11.780 2016] [ 4772] listening on 127.0.0.1:9306
+[Sun Apr 17 22:14:11.879 2016] [ 4772] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:14:11.881 2016] [ 4772] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:14:11.885 2016] [ 4772] accepting connections
+[Sun Apr 17 22:14:22.550 2016] [ 4772] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:14:22.598 2016] [ 4772] rotating index 'deltaproduct': started
+[Sun Apr 17 22:14:22.640 2016] [ 4772] rotating index 'deltaproduct': success
+[Sun Apr 17 22:14:22.640 2016] [ 4772] rotating index: all indexes done
+[Sun Apr 17 22:18:51.143 2016] [ 4772] caught SIGTERM, shutting down
+[Sun Apr 17 22:18:51.182 2016] [ 4772] rt: index rt_delta: ramchunk saved in 0.003 sec
+[Sun Apr 17 22:18:51.186 2016] [ 4772] shutdown complete
+[Sun Apr 17 22:19:59.253 2016] [ 6276] listening on 127.0.0.1:9306
+[Sun Apr 17 22:19:59.333 2016] [ 6276] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:19:59.336 2016] [ 6276] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:19:59.339 2016] [ 6276] accepting connections
+[Sun Apr 17 22:20:20.988 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:20:21.006 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:20:21.011 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:20:21.011 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:22:51.368 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:22:51.396 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:22:51.406 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:22:51.406 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:23:56.023 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:23:56.062 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:23:56.071 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:23:56.072 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:27:41.555 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:27:41.587 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:27:41.597 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:27:41.597 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:28:16.019 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:28:16.023 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:28:16.031 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:28:16.031 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:34:26.520 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:34:26.531 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:34:26.540 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:34:26.540 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:34:57.443 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:34:57.470 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:34:57.477 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:34:57.478 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:36:34.377 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:36:34.416 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:36:34.426 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:36:34.426 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:37:41.891 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:37:41.941 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:37:41.949 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:37:41.949 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:38:27.160 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:38:27.203 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:38:27.212 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:38:27.212 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:39:26.619 2016] [ 6276] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:39:26.642 2016] [ 6276] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:39:26.651 2016] [ 6276] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:39:26.651 2016] [ 6276] rotating index: all indexes done
+[Sun Apr 17 22:39:37.335 2016] [ 6276] caught SIGTERM, shutting down
+[Sun Apr 17 22:39:37.425 2016] [ 6276] rt: index rt_delta: ramchunk saved in 0.039 sec
+[Sun Apr 17 22:39:37.429 2016] [ 6276] shutdown complete
+[Sun Apr 17 22:39:48.221 2016] [ 4140] listening on 127.0.0.1:9306
+[Sun Apr 17 22:39:48.232 2016] [ 4140] WARNING: index 'index_main': preload: failed to open C:/index/item1.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:39:48.233 2016] [ 4140] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:39:48.306 2016] [ 4140] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:39:48.309 2016] [ 4140] accepting connections
+[Sun Apr 17 22:39:59.943 2016] [ 4140] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:39:59.944 2016] [ 4140] rotating index 'index_main': started
+[Sun Apr 17 22:40:00.010 2016] [ 4140] rotating index 'index_main': success
+[Sun Apr 17 22:40:00.010 2016] [ 4140] rotating index: all indexes done
+[Sun Apr 17 22:40:30.603 2016] [ 4140] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:40:30.638 2016] [ 4140] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:40:30.643 2016] [ 4140] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:40:30.643 2016] [ 4140] rotating index: all indexes done
+[Sun Apr 17 22:44:31.894 2016] [ 4140] caught SIGTERM, shutting down
+[Sun Apr 17 22:44:31.956 2016] [ 4140] rt: index rt_delta: ramchunk saved in 0.032 sec
+[Sun Apr 17 22:44:31.961 2016] [ 4140] shutdown complete
+[Sun Apr 17 22:44:36.279 2016] [ 5464] listening on 127.0.0.1:9306
+[Sun Apr 17 22:44:36.349 2016] [ 5464] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:44:36.395 2016] [ 5464] accepting connections
+[Sun Apr 17 22:44:38.731 2016] [ 5464] caught SIGTERM, shutting down
+[Sun Apr 17 22:44:38.814 2016] [ 5464] rt: index rt_delta: ramchunk saved in 0.033 sec
+[Sun Apr 17 22:44:38.818 2016] [ 5464] shutdown complete
+[Sun Apr 17 22:44:51.147 2016] [ 6484] listening on 127.0.0.1:9306
+[Sun Apr 17 22:44:51.150 2016] [ 6484] WARNING: index 'index_main': preload: failed to open C:/index/item1.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:44:51.151 2016] [ 6484] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:44:51.222 2016] [ 6484] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:44:51.226 2016] [ 6484] accepting connections
+[Sun Apr 17 22:45:17.945 2016] [ 6484] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:45:17.985 2016] [ 6484] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:45:17.990 2016] [ 6484] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:45:17.990 2016] [ 6484] rotating index: all indexes done
+[Sun Apr 17 22:46:01.726 2016] [ 6484] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:46:01.768 2016] [ 6484] rotating index 'index_main': started
+[Sun Apr 17 22:46:01.773 2016] [ 6484] rotating index 'index_main': success
+[Sun Apr 17 22:46:01.773 2016] [ 6484] rotating index: all indexes done
+[Sun Apr 17 22:50:13.143 2016] [ 6484] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:50:13.172 2016] [ 6484] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:50:13.180 2016] [ 6484] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:50:13.180 2016] [ 6484] rotating index: all indexes done
+[Sun Apr 17 22:50:26.653 2016] [ 6484] caught SIGTERM, shutting down
+[Sun Apr 17 22:50:26.723 2016] [ 6484] rt: index rt_delta: ramchunk saved in 0.034 sec
+[Sun Apr 17 22:50:26.727 2016] [ 6484] shutdown complete
+[Sun Apr 17 22:51:06.978 2016] [ 6204] listening on 127.0.0.1:9306
+[Sun Apr 17 22:51:06.980 2016] [ 6204] WARNING: index 'index_main': preload: failed to open C:/index/item1.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:51:06.981 2016] [ 6204] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:51:07.050 2016] [ 6204] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 22:51:07.053 2016] [ 6204] accepting connections
+[Sun Apr 17 22:51:11.288 2016] [ 6204] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:51:11.333 2016] [ 6204] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:51:11.392 2016] [ 6204] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:51:11.392 2016] [ 6204] rotating index: all indexes done
+[Sun Apr 17 22:51:18.603 2016] [ 6204] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:51:18.639 2016] [ 6204] rotating index 'index_main': started
+[Sun Apr 17 22:51:18.646 2016] [ 6204] rotating index 'index_main': success
+[Sun Apr 17 22:51:18.646 2016] [ 6204] rotating index: all indexes done
+[Sun Apr 17 22:56:07.524 2016] [ 6204] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:56:07.543 2016] [ 6204] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:56:07.554 2016] [ 6204] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:56:07.554 2016] [ 6204] rotating index: all indexes done
+[Sun Apr 17 22:57:22.944 2016] [ 6204] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:57:22.995 2016] [ 6204] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:57:23.005 2016] [ 6204] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:57:23.005 2016] [ 6204] rotating index: all indexes done
+[Sun Apr 17 22:58:36.578 2016] [ 6204] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 22:58:36.611 2016] [ 6204] rotating index 'deltaproductcsv': started
+[Sun Apr 17 22:58:36.622 2016] [ 6204] rotating index 'deltaproductcsv': success
+[Sun Apr 17 22:58:36.622 2016] [ 6204] rotating index: all indexes done
+[Sun Apr 17 23:02:04.655 2016] [ 6204] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:02:04.658 2016] [ 6204] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:02:04.668 2016] [ 6204] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:02:04.669 2016] [ 6204] rotating index: all indexes done
+[Sun Apr 17 23:02:36.701 2016] [ 6204] caught SIGTERM, shutting down
+[Sun Apr 17 23:02:36.723 2016] [ 6204] rt: index rt_delta: ramchunk saved in 0.003 sec
+[Sun Apr 17 23:02:36.730 2016] [ 6204] shutdown complete
+[Sun Apr 17 23:02:53.550 2016] [ 6120] listening on 127.0.0.1:9306
+[Sun Apr 17 23:02:53.551 2016] [ 6120] WARNING: index 'index_main': preload: failed to open C:/index/item1.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:02:53.552 2016] [ 6120] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:02:53.625 2016] [ 6120] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:02:53.629 2016] [ 6120] accepting connections
+[Sun Apr 17 23:02:59.775 2016] [ 6120] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:02:59.825 2016] [ 6120] rotating index 'index_main': started
+[Sun Apr 17 23:02:59.866 2016] [ 6120] rotating index 'index_main': success
+[Sun Apr 17 23:02:59.866 2016] [ 6120] rotating index: all indexes done
+[Sun Apr 17 23:03:03.134 2016] [ 6120] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:03:03.168 2016] [ 6120] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:03:03.175 2016] [ 6120] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:03:03.175 2016] [ 6120] rotating index: all indexes done
+[Sun Apr 17 23:12:07.131 2016] [ 6120] caught SIGTERM, shutting down
+[Sun Apr 17 23:12:07.187 2016] [ 6120] rt: index rt_delta: ramchunk saved in 0.003 sec
+[Sun Apr 17 23:12:07.196 2016] [ 6120] shutdown complete
+[Sun Apr 17 23:12:29.344 2016] [ 4816] listening on 127.0.0.1:9306
+[Sun Apr 17 23:12:29.346 2016] [ 4816] WARNING: index 'index_main': preload: failed to open C:/index/item1.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:12:29.348 2016] [ 4816] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:12:29.528 2016] [ 4816] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:12:29.533 2016] [ 4816] accepting connections
+[Sun Apr 17 23:12:37.810 2016] [ 4816] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:12:37.830 2016] [ 4816] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:12:37.905 2016] [ 4816] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:12:37.905 2016] [ 4816] rotating index: all indexes done
+[Sun Apr 17 23:12:49.185 2016] [ 4816] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:12:49.232 2016] [ 4816] rotating index 'index_main': started
+[Sun Apr 17 23:12:49.239 2016] [ 4816] rotating index 'index_main': success
+[Sun Apr 17 23:12:49.239 2016] [ 4816] rotating index: all indexes done
+[Sun Apr 17 23:29:31.417 2016] [ 4816] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:29:31.458 2016] [ 4816] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:29:31.469 2016] [ 4816] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:29:31.479 2016] [ 4816] rotating index: all indexes done
+[Sun Apr 17 23:29:40.623 2016] [ 4816] caught SIGTERM, shutting down
+[Sun Apr 17 23:29:40.676 2016] [ 4816] rt: index rt_delta: ramchunk saved in 0.003 sec
+[Sun Apr 17 23:29:40.682 2016] [ 4816] shutdown complete
+[Sun Apr 17 23:29:54.900 2016] [ 1292] listening on 127.0.0.1:9306
+[Sun Apr 17 23:29:54.901 2016] [ 1292] WARNING: index 'index_main': preload: failed to open C:/index/item1.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:29:54.902 2016] [ 1292] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:29:54.986 2016] [ 1292] WARNING: index 'deltaproductcsv': preload: failed to open C:/index/deltaproductcsv.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:29:54.990 2016] [ 1292] accepting connections
+[Sun Apr 17 23:30:13.244 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:30:13.280 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:30:13.312 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:30:13.312 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:31:32.888 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:31:32.895 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:31:32.906 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:31:32.906 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:32:00.111 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:32:00.112 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:32:00.123 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:32:00.124 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:32:41.807 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:32:41.827 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:32:41.838 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:32:41.838 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:32:59.689 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:32:59.729 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:32:59.739 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:32:59.739 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:33:51.895 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:33:51.896 2016] [ 1292] rotating index 'index_main': started
+[Sun Apr 17 23:33:51.907 2016] [ 1292] rotating index 'index_main': success
+[Sun Apr 17 23:33:51.907 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:33:55.249 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:33:55.264 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:33:55.275 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:33:55.275 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:34:55.505 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:34:55.528 2016] [ 1292] rotating index 'index_main': started
+[Sun Apr 17 23:34:55.542 2016] [ 1292] rotating index 'index_main': success
+[Sun Apr 17 23:34:55.542 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:36:11.291 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:36:11.314 2016] [ 1292] rotating index 'index_main': started
+[Sun Apr 17 23:36:11.325 2016] [ 1292] rotating index 'index_main': success
+[Sun Apr 17 23:36:11.326 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:36:58.117 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:36:58.122 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:36:58.132 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:36:58.133 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:38:54.784 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:38:54.818 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:38:54.828 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:38:54.829 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:40:06.946 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:40:06.998 2016] [ 1292] rotating index 'deltaproductcsv': started
+[Sun Apr 17 23:40:07.009 2016] [ 1292] rotating index 'deltaproductcsv': success
+[Sun Apr 17 23:40:07.009 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:40:08.979 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:40:08.990 2016] [ 1292] rotating index 'index_main': started
+[Sun Apr 17 23:40:09.001 2016] [ 1292] rotating index 'index_main': success
+[Sun Apr 17 23:40:09.001 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:41:31.876 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:41:31.910 2016] [ 1292] rotating index 'index_main': started
+[Sun Apr 17 23:41:31.922 2016] [ 1292] rotating index 'index_main': success
+[Sun Apr 17 23:41:31.922 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:41:39.901 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:41:39.911 2016] [ 1292] rotating index 'deltaproduct': started
+[Sun Apr 17 23:41:39.919 2016] [ 1292] rotating index 'deltaproduct': success
+[Sun Apr 17 23:41:39.919 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:41:46.807 2016] [ 1292] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:41:46.827 2016] [ 1292] rotating index 'index_main': started
+[Sun Apr 17 23:41:46.838 2016] [ 1292] rotating index 'index_main': success
+[Sun Apr 17 23:41:46.838 2016] [ 1292] rotating index: all indexes done
+[Sun Apr 17 23:52:24.719 2016] [ 1292] caught SIGTERM, shutting down
+[Sun Apr 17 23:52:24.783 2016] [ 1292] rt: index rt_delta: ramchunk saved in 0.003 sec
+[Sun Apr 17 23:52:24.794 2016] [ 1292] shutdown complete
+[Sun Apr 17 23:53:28.650 2016] [ 7272] listening on 127.0.0.1:9306
+[Sun Apr 17 23:53:28.733 2016] [ 7272] WARNING: index 'deltaproduct': preload: failed to open C:/index/item_delta.sph: No such file or directory; NOT SERVING
+[Sun Apr 17 23:53:28.738 2016] [ 7272] accepting connections
+[Sun Apr 17 23:54:18.774 2016] [ 7272] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:54:18.794 2016] [ 7272] rotating index 'deltaproduct': started
+[Sun Apr 17 23:54:18.799 2016] [ 7272] rotating index 'deltaproduct': success
+[Sun Apr 17 23:54:18.799 2016] [ 7272] rotating index: all indexes done
+[Sun Apr 17 23:55:57.251 2016] [ 7272] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:55:57.270 2016] [ 7272] rotating index 'index_main': started
+[Sun Apr 17 23:55:57.280 2016] [ 7272] rotating index 'index_main': success
+[Sun Apr 17 23:55:57.280 2016] [ 7272] rotating index: all indexes done
+[Sun Apr 17 23:57:02.201 2016] [ 7272] caught SIGHUP (seamless=1, in queue=1)
+[Sun Apr 17 23:57:02.251 2016] [ 7272] rotating index 'deltaproduct': started
+[Sun Apr 17 23:57:02.261 2016] [ 7272] rotating index 'deltaproduct': success
+[Sun Apr 17 23:57:02.261 2016] [ 7272] rotating index: all indexes done

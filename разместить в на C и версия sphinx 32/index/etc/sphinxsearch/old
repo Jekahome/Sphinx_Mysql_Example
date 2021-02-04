@@ -1,0 +1,323 @@
+searchd
+{
+    listen    = 127.0.0.1:3312
+    listen    = 9306:mysql41
+    log       = C:/OpenServer/userdata/logs/SphinxSearchd.log
+    query_log = C:/OpenServer/userdata/logs/SphinxQuery.log
+    pid_file  = C:/OpenServer/userdata/logs/Sphinx.pid
+
+    dist_threads = 4
+    thread_stack = 2M
+    binlog_path  = C:/OpenServer/userdata/logs/binlog
+    binlog_flush = 1
+    collation_server = utf8_general_ci
+    max_children     = 1000
+    workers          = threads
+    read_timeout     = 5
+    query_log_format = sphinxql
+    rt_flush_period  = 3600
+
+    seamless_rotate  = 1
+ expansion_limit = 16
+ predicted_time_costs = doc=128, hit=96, skip=4096, match=128
+
+}
+
+# C:/OpenServer/userdata/config/sphinx.conf
+# C:/OpenServer/userdata/logs/SphinxQuery.log
+# C:/OpenServer/userdata/logs/SphinxSearchd.log
+# C:/OpenServer/userdata/logs/binlog
+# C:/OpenServer/userdata/logs/Sphinx.pid
+# C:/OpenServer/userdata/Sphinx/data
+# C:/OpenServer/modules/sphinx/bin/indexer --all  --print-queries --config  C:/OpenServer/userdata/config/sphinx.conf
+# C:/OpenServer/modules/sphinx/bin/indexer --rotate  --all --config C:/OpenServer/userdata/config/sphinx.conf
+# C:/OpenServer/modules/sphinx/bin/searchd --config C:/OpenServer/userdata/config/sphinx.conf --iostats --logdebugv --console --pidfile
+# C:/OpenServer/modules/sphinx/bin/searchd --stop --config C:/OpenServer/userdata/config/sphinx.conf
+# C:/OpenServer/modules/sphinx/bin/indextool --dumpdict index_item_1  --config C:/OpenServer/userdata/config/sphinx.conf   > C:/OpenServer/domains/testvariablesphinx/INFO/dumpdict.txt
+
+common
+{
+        # lemmatizer_base = /lemmatizer
+        # plugin_dir      = /plagin
+}
+
+indexer
+{
+      mem_limit = 1000M
+      max_iops  = 100
+   max_file_field_buffer = 128M
+     # lemmatizer_cache = 1024M
+}
+
+source  source_base
+{
+    type            = mysql
+    sql_host        = 127.0.0.1
+    sql_user        = root
+    sql_pass        =
+    sql_db          = tvs
+    sql_port        = 3306
+    sql_query_pre   = SET WAIT_TIMEOUT=25400
+    sql_query_pre   = SET NAMES utf8
+    sql_query_post  = SET CHARACTER SET utf8
+    sql_query_pre   = SET SESSION query_cache_type=OFF
+    # каждые sql_range_step шт. id будет пауза на sql_ranged_throttle mc. и вызовется еще раз sql_query_range
+ sql_range_step  = 10000
+ sql_ranged_throttle = 50
+    mysql_connect_flags = 32
+
+
+
+
+}
+
+source child_source_base : source_base
+{
+
+    sql_field_string = title
+    sql_field_string = filter
+    sql_attr_uint    = status
+ sql_attr_bool    = is_deleted
+
+}
+
+source  source_item_1:child_source_base
+{
+
+
+
+  sql_query_pre      =  CALL `sp_range_ex` (@out_min , @out_max,1,4);
+     sql_query_range  =  SELECT @out_min   , @out_max   ;
+
+ sql_query = \
+    SELECT table_content.id,table_content.title, table_content.status,  \
+    GROUP_CONCAT(  's_',table_indexer.category_id,'_',table_indexer.`key`,'_',table_indexer.value,'_f' SEPARATOR ',') AS 'filter',0 AS 'is_deleted' \
+    FROM table_indexer,table_content \
+    WHERE table_content.id = table_indexer.id AND table_content.id >=$start AND table_content.id <= $end \
+    GROUP BY table_content.id;
+
+
+ sql_attr_multi  = \
+      uint  category_id from   ranged-query; \
+      SELECT table_content.id, table_indexer.category_id \
+      FROM table_indexer,table_content \
+      WHERE table_content.id = table_indexer.id AND  table_content.id >= $start AND table_content.id <= $end ; \
+      SELECT @out_min   , @out_max   ;
+
+
+}
+
+ source  source_item_2:child_source_base
+{
+
+
+
+ sql_query_pre       =  CALL `sp_range_ex` (@out_min , @out_max,2,4);
+     sql_query_range  =  SELECT @out_min   , @out_max   ;
+
+ sql_query = \
+    SELECT table_content.id,table_content.title, table_content.status,  \
+    GROUP_CONCAT(  's_',table_indexer.category_id,'_',table_indexer.`key`,'_',table_indexer.value,'_f' SEPARATOR ',') AS 'filter' ,0 AS 'is_deleted'\
+    FROM table_indexer,table_content \
+    WHERE table_content.id = table_indexer.id AND table_content.id >=$start AND table_content.id <= $end \
+    GROUP BY table_content.id;
+
+
+ sql_attr_multi  = \
+      uint  category_id from   ranged-query; \
+      SELECT table_content.id, table_indexer.category_id \
+      FROM table_indexer,table_content \
+      WHERE table_content.id = table_indexer.id AND  table_content.id >= $start AND table_content.id <= $end ; \
+      SELECT @out_min   , @out_max   ;
+
+
+}
+
+ source  source_item_3:child_source_base
+{
+
+
+
+
+  sql_query_pre      =  CALL `sp_range_ex` (@out_min , @out_max,3,4);
+     sql_query_range  =  SELECT @out_min   , @out_max   ;
+
+ sql_query = \
+    SELECT table_content.id,table_content.title, table_content.status,  \
+    GROUP_CONCAT(  's_',table_indexer.category_id,'_',table_indexer.`key`,'_',table_indexer.value,'_f' SEPARATOR ',') AS 'filter',0 AS 'is_deleted' \
+    FROM table_indexer,table_content \
+    WHERE table_content.id = table_indexer.id AND table_content.id >=$start AND table_content.id <= $end \
+    GROUP BY table_content.id;
+
+
+ sql_attr_multi  = \
+      uint  category_id from   ranged-query; \
+      SELECT table_content.id, table_indexer.category_id \
+      FROM table_indexer,table_content \
+      WHERE table_content.id = table_indexer.id AND  table_content.id >= $start AND table_content.id <= $end ; \
+      SELECT @out_min   , @out_max   ;
+
+
+}
+
+ source  source_item_4:child_source_base
+{
+
+  sql_query_pre      =  CALL `sp_range_ex` (@out_min , @out_max,4,4);
+     sql_query_range  =  SELECT @out_min   , @out_max   ;
+
+ sql_query = \
+    SELECT table_content.id,table_content.title, table_content.status,  \
+    GROUP_CONCAT(  's_',table_indexer.category_id,'_',table_indexer.`key`,'_',table_indexer.value,'_f' SEPARATOR ',') AS 'filter',0 AS 'is_deleted' \
+    FROM table_indexer,table_content \
+    WHERE table_content.id = table_indexer.id AND table_content.id >=$start AND table_content.id <= $end \
+    GROUP BY table_content.id;
+
+
+ sql_attr_multi  = \
+      uint  category_id from   ranged-query; \
+      SELECT table_content.id, table_indexer.category_id \
+      FROM table_indexer,table_content \
+      WHERE table_content.id = table_indexer.id AND  table_content.id >= $start AND table_content.id <= $end ; \
+      SELECT @out_min   , @out_max   ;
+
+}
+
+
+
+index index_item_1
+{
+ type = plain
+ source = source_item_1
+ path = C:/OpenServer/userdata/Sphinx/data/tvs1
+ mlock = 0
+
+ docinfo = extern
+ preopen = 1
+ inplace_enable = 0
+ # expand_keywords ( running | *running* | =running )
+ expand_keywords = 1
+
+
+ html_strip = 1
+ html_remove_elements = style,script
+ html_index_attrs = img=alt,tittle; a=tittle;
+
+ dict = keywords
+
+ min_word_len = 3
+ # morphology = stem_enru, soundex, metaphone
+ # morphology =   lemmatize_ru_all
+ # min_infix_len = 3
+ min_prefix_len = 3
+ #index_exact_words = 1
+ blend_chars = U+002B, &->+,%,', @,-,U+0026,?
+ phrase_boundary = U+2e, ?, !, U+2026
+
+ charset_table =0..9, A..Z->a..z,_, a..z, U+410..U+42C->U+430..U+44C,U+42E..U+42F->U+44E..U+44F, U+430..U+44C, U+44E..U+44F, U+0401
+
+ ignore_chars = U+AD
+ # min_stemming_len    = 3
+ # min_prefix_len      = 3
+ # ngram_len                 = 1
+ # ngram_len                 = 1
+ stopword_step = 0
+
+ # wordforms =  /ext/wordform.txt
+ # stopwords =  /ext/stopwords.txt
+}
+
+index index_item_2:index_item_1
+{
+ type = plain
+ source = source_item_2
+ path = C:/OpenServer/userdata/Sphinx/data/tvs2
+}
+
+index index_item_3:index_item_1
+{
+ type = plain
+ source = source_item_3
+ path = C:/OpenServer/userdata/Sphinx/data/tvs3
+
+}
+
+index index_item_4:index_item_1
+{
+ type = plain
+ source = source_item_4
+ path = C:/OpenServer/userdata/Sphinx/data/tvs4
+}
+
+index main
+{
+    type  = distributed
+
+    local = index_item_1
+    local = index_item_2
+    local = index_item_3
+    local = index_item_4
+
+    path =  C:/OpenServer/userdata/Sphinx/data/tvs_main_dist
+}
+
+
+
+
+
+
+
+
+
+# -------------------------------------------------------------------
+# delta source , index
+# -------------------------------------------------------------------
+
+source  source_delta:child_source_base
+{
+
+
+ # sql_query_pre = SET @ptime =  UNIX_TIMESTAMP(DATE_ADD(CURDATE(), INTERVAL "-0 00:00:01" DAY_SECOND));
+ sql_query_pre = SET @ptime =  UNIX_TIMESTAMP(DATE_ADD(CURDATE(), INTERVAL "-0 1:15:00" DAY_SECOND));
+
+ sql_query = \
+    SELECT table_content.id,table_content.title, table_content.status,  \
+    GROUP_CONCAT(  's_',table_indexer.category_id,'_',table_indexer.`key`,'_',table_indexer.value,'_f' SEPARATOR ',') AS 'filter',0 AS 'is_deleted' \
+    FROM table_indexer,table_content \
+    WHERE table_content.id = table_indexer.id AND   UNIX_TIMESTAMP(table_content.update_time) > @ptime   \
+    GROUP BY table_content.id;
+
+
+ sql_attr_multi  = \
+      uint  category_id from  query; \
+      SELECT table_content.id, table_indexer.category_id \
+      FROM table_indexer,table_content \
+      WHERE table_content.id = table_indexer.id   AND  UNIX_TIMESTAMP(table_content.update_time) > @ptime   ;
+        # SELECT 1, UNIX_TIMESTAMP(DATE_ADD(CURDATE(), INTERVAL "-0 1:15:00" DAY_SECOND)) ;
+
+   # список id- шников которые будет выводить только этот индекс
+     sql_query_killlist = SELECT table_content.id FROM table_content WHERE UNIX_TIMESTAMP(table_content.update_time) > @ptime ;
+
+
+}
+
+
+
+index delta:index_item_1
+{
+    type   = plain
+    source = source_delta
+ path   = C:/OpenServer/userdata/Sphinx/data/tvs_delta
+
+}
+
+
+
+
+
+
+
+
+
+
+

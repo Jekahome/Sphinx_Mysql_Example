@@ -1,0 +1,60 @@
+sql_query = \
+				SELECT  HIGH_PRIORITY SQL_BIG_RESULT  b.book_id, \
+						  b.book AS 'book', \
+						  b.book AS 'book_field', \
+						  IFNULL(GROUP_CONCAT(DISTINCT ih.isbn SEPARATOR ' '),'') AS 'isbn', \
+						  IFNULL(b.protagonist,'') AS 'protagonist', \
+						  0 AS 'deleted', \
+						  IFNULL(b.status,0) AS 'status', \
+					   GROUP_CONCAT(DISTINCT a.author SEPARATOR ' ') AS 'author', \
+					    c.category  AS 'category', \
+                          IFNULL(  cpar.category_id,0)   AS 'category_id', \
+					   IFNULL(b.trigrams,0) AS 'trigrams',IFNULL(b.len,0) AS 'len',IFNULL(b.count_tr,0) AS 'count_tr',IFNULL(b.count_word,0) AS 'count_word', \
+					   CONCAT(  \
+					     IFNULL(  GROUP_CONCAT(DISTINCT ' tag',tag.tag_id,'e'  SEPARATOR ' ')   ,'')   , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' la',la.lang_id,'e'  SEPARATOR ' ')   ,'')   , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' bh',bh.binding_id,'e'  SEPARATOR ' ')   ,'')  , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' st',st.state_id,'e'  SEPARATOR ' ')   ,'')   , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' fh',fh.format_id,'e'  SEPARATOR ' ')   ,'')  , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' th',th.type_id,'e'  SEPARATOR ' ')   ,'') , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' sh',sh.seria_id,'e'  SEPARATOR ' ')   ,'')  , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' ph',ph.publisher_id,'e'  SEPARATOR ' ')   ,'')  , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' lh',lh.list_id,'e'  SEPARATOR ' ')   ,'')   , \
+						 IFNULL(  GROUP_CONCAT(DISTINCT ' coh',coh.cover_id,'e'  SEPARATOR ' ')   ,'') \
+                       ) AS 'filter', \
+					    CONCAT('{',         \
+						   IFNULL(  GROUP_CONCAT(DISTINCT "'lang':'",la.lang_id,"'"  SEPARATOR ' ')   ,"'lang':''")   , \
+					  	   IFNULL(  GROUP_CONCAT(DISTINCT ",'binding':'",bh.binding_id,"'"  SEPARATOR ' ')   ,",'binding':''")  , \
+						   IFNULL(  GROUP_CONCAT(DISTINCT ",'state':'",st.state_id,"'" SEPARATOR ' ') ,",'state':''")   , \
+					  	   IFNULL(  GROUP_CONCAT(DISTINCT ",'format':'",fh.format_id,"'"  SEPARATOR ' ')   ,",'format':''")  , \
+					  	   IFNULL(  GROUP_CONCAT(DISTINCT ",'type':'",th.type_id,"'"  SEPARATOR ' ')   ,",'type':''") , \
+						   IFNULL(  GROUP_CONCAT(DISTINCT ",'series':'",sh.seria_id,"'"  SEPARATOR ' ')   ,",'serie':''")  , \
+						   IFNULL(  GROUP_CONCAT(DISTINCT ",'publisher':'",ph.publisher_id,"'"  SEPARATOR ' ')   ,",'publisher':''")  , \
+						   IFNULL(  GROUP_CONCAT(DISTINCT ",'list':'",lh.list_id,"'"  SEPARATOR ' ')   ,",'list':''")   , \
+						   IFNULL(  GROUP_CONCAT(DISTINCT ",'cover':'",coh.cover_id,"'"  SEPARATOR ' ')   ,",'cover':''") , \
+		               '}') AS 'fjson', \
+					    CONCAT("{'tag':[",         \
+						   IFNULL(  GROUP_CONCAT(DISTINCT tag.tag_id SEPARATOR ',') ,""),  \
+		               ']}') AS 'jsontag', \
+					    CONCAT("{'cid':[",         \
+						   IFNULL(    REPLACE( cpar.id_path, '/', ','),"") , \
+		               ']}') AS 'jsoncid', \
+					   IFNULL(TRUNCATE(MIN(bp.price_float),3),0) AS 'minprice', IFNULL(TRUNCATE(MAX(bp.price_float),3),0) AS 'maxprice',IFNULL(b.picture,"") AS 'main_img' \
+					 FROM  idc_categories_parents cpar,idc_authors a,idc_categories c,idc_books b  \
+					 LEFT JOIN idc_book_author_hooks ah     ON b.book_id = ah.book_id \
+					 LEFT JOIN idc_book_categories_hooks ch ON b.book_id = ch.book_id \
+					 LEFT JOIN idc_book_prices bp           ON b.book_id = bp.book_id \
+					 LEFT JOIN idc_book_series_hooks sh     ON b.book_id = sh.book_id \
+					 LEFT JOIN idc_book_publisher_hooks ph  ON b.book_id = ph.book_id \
+					 LEFT JOIN idc_book_list_hooks  lh      ON b.book_id = lh.book_id \
+					 LEFT JOIN  idc_book_langs_hooks  la    ON b.book_id = la.book_id \
+					 LEFT JOIN idc_book_bindings_hooks bh   ON b.book_id = bh.book_id \
+					 LEFT JOIN idc_book_states_hooks st     ON b.book_id = st.book_id \
+					 LEFT JOIN  idc_book_formats_hooks fh   ON b.book_id = fh.book_id \
+					 LEFT JOIN idc_book_isbn_hooks  ih      ON b.book_id = ih.book_id \
+					 LEFT JOIN idc_book_types_hooks th      ON b.book_id = th.book_id \
+                     LEFT JOIN idc_book_cover_hooks coh     ON b.book_id = coh.book_id \
+                     LEFT JOIN idc_book_tag_hooks tag       ON b.book_id = tag.book_id  \			 
+                     WHERE ah.author_id = a.author_id AND c.category_id = ch.category_id  AND cpar.category_id=c.category_id  AND b.book_id < 100 \
+					 GROUP BY b.book_id ;     
+ 

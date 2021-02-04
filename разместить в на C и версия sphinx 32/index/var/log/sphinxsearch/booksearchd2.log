@@ -1,0 +1,51 @@
+[Sun Apr 17 19:58:12.182 2016] [ 6708] listening on 127.0.0.1:9306
+[Sun Apr 17 19:58:12.191 2016] [ 6708] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 19:58:12.192 2016] [ 6708] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 19:58:12.192 2016] [ 6708] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 19:58:12.192 2016] [ 6708] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 19:58:12.192 2016] [ 6708] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 19:58:12.193 2016] [ 6708] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 19:58:12.193 2016] [ 6708] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 19:58:12.193 2016] [ 6708] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 19:58:12.193 2016] [ 6708] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 19:58:12.193 2016] [ 6708] binlog: finished replaying total 3 in 0.002 sec
+[Sun Apr 17 19:58:12.194 2016] [ 6708] accepting connections
+[Sun Apr 17 20:01:21.596 2016] [ 6708] caught SIGTERM, shutting down
+[Sun Apr 17 20:01:21.748 2016] [ 6708] shutdown complete
+[Sun Apr 17 20:08:44.436 2016] [ 6320] listening on 127.0.0.1:9306
+[Sun Apr 17 20:08:44.448 2016] [ 6320] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:08:44.449 2016] [ 6320] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:08:44.449 2016] [ 6320] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:08:44.450 2016] [ 6320] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:08:44.451 2016] [ 6320] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:08:44.451 2016] [ 6320] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:08:44.453 2016] [ 6320] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:08:44.454 2016] [ 6320] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:08:44.454 2016] [ 6320] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:08:44.454 2016] [ 6320] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:08:44.455 2016] [ 6320] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:08:44.455 2016] [ 6320] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:08:44.456 2016] [ 6320] binlog: finished replaying total 4 in 0.007 sec
+[Sun Apr 17 20:08:44.458 2016] [ 6320] accepting connections
+[Sun Apr 17 20:11:34.037 2016] [ 6320] caught SIGTERM, shutting down
+[Sun Apr 17 20:11:34.167 2016] [ 6320] shutdown complete
+[Sun Apr 17 20:15:20.554 2016] [ 6544] listening on 127.0.0.1:9306
+[Sun Apr 17 20:15:20.570 2016] [ 6544] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:15:20.571 2016] [ 6544] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:15:20.572 2016] [ 6544] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:15:20.572 2016] [ 6544] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:15:20.573 2016] [ 6544] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:15:20.573 2016] [ 6544] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:15:20.573 2016] [ 6544] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:15:20.573 2016] [ 6544] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:15:20.573 2016] [ 6544] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:15:20.573 2016] [ 6544] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:15:20.575 2016] [ 6544] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:15:20.575 2016] [ 6544] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:15:20.575 2016] [ 6544] binlog: replaying log C:/index/var/log/binlog/binlog.001
+[Sun Apr 17 20:15:20.575 2016] [ 6544] binlog: replay stats: 0 rows in 0 commits; 0 updates, 0 reconfigure; 0 indexes
+[Sun Apr 17 20:15:20.575 2016] [ 6544] binlog: finished replaying C:/index/var/log/binlog/binlog.001; 0.0 MB in 0.000 sec
+[Sun Apr 17 20:15:20.575 2016] [ 6544] binlog: finished replaying total 5 in 0.005 sec
+[Sun Apr 17 20:15:20.577 2016] [ 6544] accepting connections
+[Sun Apr 17 20:20:56.865 2016] [ 6544] caught SIGTERM, shutting down
+[Sun Apr 17 20:20:56.963 2016] [ 6544] shutdown complete

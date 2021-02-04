@@ -1,0 +1,6 @@
+
+cmd==== indexer.list | xargs -n 1 -P 4  /bin/indexer --config C:/OpenServer/.. 
+
+פאיכ indexer.list
+ index1
+ index2

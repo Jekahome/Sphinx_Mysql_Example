@@ -1,0 +1,1 @@
+CREATE FUNCTION udffunc RETURNS INTEGER SONAME 'udffunc.dll';

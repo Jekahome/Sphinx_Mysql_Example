@@ -1,0 +1,10 @@
+-- SET WAIT_TIMEOUT=25400
+-- SET NAMES utf8
+-- SET CHARACTER SET utf8
+-- SET COLLATION_CONNECTION=utf8_general_ci
+-- SET SESSION query_cache_type=OFF
+-- CREATE FUNCTION myfoo RETURNS INTEGER SONAME 'ConsoleApplication1.dll';
+
+
+
+
